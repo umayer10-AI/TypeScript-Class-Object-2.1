@@ -5,7 +5,14 @@ class A {
             return this.name;
         }
 
+        setName(v:string){
+            this.name = v
+        }
+
 }
 const b = new A("Umayer", 21)
 // b.getName()
-console.log(b.getName())
+b.name="oka oka"
+// b.setName("Lala")
+// console.log(b.getName())
+console.log(b)
