@@ -58,3 +58,14 @@
 // }
 // const b = new A()
 // console.log(b.version)
+
+
+class P{
+    constructor(protected amount: number){}
+
+    isPayment(v:number){
+        return this.amount > v
+    }
+}
+const b = new P(10)
+console.log(b.isPayment(200))

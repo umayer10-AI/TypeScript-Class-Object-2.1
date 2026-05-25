@@ -49,4 +49,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // }
 // const b = new A()
 // console.log(b.version)
+class P {
+    amount;
+    constructor(amount) {
+        this.amount = amount;
+    }
+    isPayment(v) {
+        return this.amount > v;
+    }
+}
+const b = new P(10);
+console.log(b.isPayment(200));
 //# sourceMappingURL=app.js.map
