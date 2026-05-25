@@ -41,12 +41,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //     }
 // }
 // console.log(A.getRandom())
-class A {
-    version = 2.0;
-    getRandom() {
-        return Math.random();
-    }
-}
-const b = new A();
-console.log(b.version);
+// class A {
+//     version = 2.0
+//     getRandom(){
+//         return Math.random()
+//     }
+// }
+// const b = new A()
+// console.log(b.version)
 //# sourceMappingURL=app.js.map

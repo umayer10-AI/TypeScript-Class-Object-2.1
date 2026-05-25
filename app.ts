@@ -49,12 +49,12 @@
 // }
 // console.log(A.getRandom())
 
-class A {
-    version = 2.0
+// class A {
+//     version = 2.0
 
-    getRandom(){
-        return Math.random()
-    }
-}
-const b = new A()
-console.log(b.version)
+//     getRandom(){
+//         return Math.random()
+//     }
+// }
+// const b = new A()
+// console.log(b.version)
