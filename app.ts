@@ -19,16 +19,23 @@
 
 
 class A {
-    constructor(public _name: string , public age?: number){}
+    constructor(public _name: string , public _age?: number){}
 
     get getName(){
         return this._name
+    }
+    get myAge(){
+        return this._age
     }
 
     set setName(v: string) {
         this._name = v
     }
+    set setAge(v: number) {
+        this._age = v
+    }
 }
 const b = new A("Umayer",21)
 b.setName = "hola"
+b.setAge = 30
 console.log(b)

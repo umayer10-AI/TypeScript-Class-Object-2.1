@@ -17,19 +17,26 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // console.log(b)
 class A {
     _name;
-    age;
-    constructor(_name, age) {
+    _age;
+    constructor(_name, _age) {
         this._name = _name;
-        this.age = age;
+        this._age = _age;
     }
     get getName() {
         return this._name;
     }
+    get myAge() {
+        return this._age;
+    }
     set setName(v) {
         this._name = v;
+    }
+    set setAge(v) {
+        this._age = v;
     }
 }
 const b = new A("Umayer", 21);
 b.setName = "hola";
+b.setAge = 30;
 console.log(b);
 //# sourceMappingURL=app.js.map
