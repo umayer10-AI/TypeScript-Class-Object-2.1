@@ -15,28 +15,38 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // b.setName("Lala")
 // // console.log(b.getName())
 // console.log(b)
+// class A {
+//     constructor(public _name: string , public _age?: number){}
+//     get getName(){
+//         return this._name
+//     }
+//     get myAge(){
+//         return this._age
+//     }
+//     set setName(v: string) {
+//         this._name = v
+//     }
+//     set setAge(v: number) {
+//         this._age = v
+//     }
+// }
+// const b = new A("Umayer",21)
+// b.setName = "hola"
+// b.setAge = 30
+// console.log(b)
+// class A {
+//     static version = 2.0
+//     static getRandom(){
+//         return Math.random()
+//     }
+// }
+// console.log(A.getRandom())
 class A {
-    _name;
-    _age;
-    constructor(_name, _age) {
-        this._name = _name;
-        this._age = _age;
-    }
-    get getName() {
-        return this._name;
-    }
-    get myAge() {
-        return this._age;
-    }
-    set setName(v) {
-        this._name = v;
-    }
-    set setAge(v) {
-        this._age = v;
+    version = 2.0;
+    getRandom() {
+        return Math.random();
     }
 }
-const b = new A("Umayer", 21);
-b.setName = "hola";
-b.setAge = 30;
-console.log(b);
+const b = new A();
+console.log(b.version);
 //# sourceMappingURL=app.js.map
